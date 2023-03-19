@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Landing (Zhuravski D.S.)</title>
+
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/media(phone).css" type="text/css">
+    <link rel="stylesheet" href="css/media(tablet).css" type="text/css">
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/6e9e6ef84a.js" crossorigin="anonymous"></script>
+
+    <!-- JQuerry -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+
+    <!-- JS -->
+    <script src="js/app.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/slick.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="main">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="#main"><img src="images/intro/logo.png" alt=""></a>
+                </div>
+
+                <nav class="nav nav--header">
+                    <a href="#main" class="nav__link">Главная</a>
+                    <a href="#about" class="nav__link">О нас</a>
+                    <a href="#features" class="nav__link">Особенности игры</a>
+                    <a href="#requirements" class="nav__link">Системные требования</a>
+                    <a href="#quotes" class="nav__link">Отзывы</a>
+                </nav>
+
+                <nav class="nav-lang">
+                    <div class="dropmenu" id="dropmenu">
+                        <a href="index-rus.html" class="nav__link--lang" id="lang-link">РУС</a>
+                        <div class="dropcontent">
+                            <a href="index.html" class="dropitem">ENG</a>
+                            <a href="" class="dropitem">fra</a>
+                            <a href="" class="dropitem">deu</a>
+                        </div>
+                    </div>
+
+                    <div class="header__icons">
+                        <a href="https://apps.microsoft.com/store/search?publisher=505%20Games" target="_blank"><i
+                                class="header__icon fab fa-xbox"></i></a>
+                        <a href="https://store.steampowered.com/publisher/505Games" target="_blank"><i
+                                class="header__icon fab fa-steam"></i></a>
+                    </div>
+                    <!-- Burger-menu -->
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro -->
+    <div class="intro">
+        <div class="intro__mask">
+            <div class="intro__inner">
+                <div class="intro__header">
+                    <h1 class="intro__title">ВЫЖИТЬ ЛЮБОЙ ЦЕНОЙ</h1>
+                    <h3 class="intro__subtitle">Испытайте новую сетевую игру в стиле королевской битвы</h3>
+                    <a class="btn" href="https://store.steampowered.com/app/619080/agecheck">
+                        <div class="intro__btn__card">Купить в Steam</div>
+                        <div class="intro__btn__devider"></div>
+                        <div class="intro__btn__card">$14.99</div>
+                    </a>
+                </div>
+                <div class="intro__more">
+                    <a href="#about" class="more__link">Больше</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About & Gallery -->
+    <section class="section section--about" id="section--about">
+        <div class="container">
+            <div class="about__inner" id="about">
+
+                <div class="about__content">
+                    <div class="section__header">
+                        <h3 class="section__suptitle">Что такое SOS?</h3>
+                        <h2 class="section__title section__title--about">сетевая игра <br> в стиле королевской битвы
+                        </h2>
+                    </div>
+                    <div class="about__text">
+                        <p class="about__text__par">
+                            В каждом раунде <span class="about__text--bold">вы</span> и <span
+                                class="about__text--bold">15</span> других участников соревнуются, чтобы сбежать со
+                            смертельного острова, наполненного монстрами. Но не все так просто: только <span
+                                class="about__text--bold">три</span> человека могут выжить.
+                                Будете ли вы бежать в одиночку или объединитесь с другими?
+                        </p>
+                        <p class="about__text__par">Прими правильное решение на грани
+                            <span class="about__text--underline"> жизни и смерти. </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about__gallery">
+                    <div class="slider__container">
+                        <div class="gallery__slider" id="gallerySlider">
+
+                            <div class="slider__card">
+                                <div class="gallery__photo__container"><img class="gallery__photo"
+                                        src="images/about/screen-1.jpg" alt=""></div>
+                            </div>
+                            <div class="slider__card">
+                                <div class="gallery__photo__container"><img class="gallery__photo"
+                                        src="images/about/screen-2.jpg" alt=""></div>
+                            </div>
+                            <div class="slider__card">
+                                <div class="gallery__photo__container"><img class="gallery__photo"
+                                        src="images/about/screen-3.jpg" alt=""></div>
+                            </div>
+                            <div class="slider__card">
+                                <div class="gallery__photo__container"><img class="gallery__photo"
+                                        src="images/about/screen-1.jpg" alt=""></div>
+                            </div>
+                            <div class="slider__card">
+                                <div class="gallery__photo__container"><img class="gallery__photo"
+                                        src="images/about/screen-2.jpg" alt=""></div>
+                            </div>
+                        </div>
+                        <!-- <div class="slider__progress-container">
+                            <div class="slider__progress-bar">progress-bar</div>
+                        </div> -->
+                    </div>
+                    <div class="slider__arrow">
+                        <img src="images/about/arrow.svg" alt="">
+                    </div>
+                </div>
+
+            </div> <!-- /.about__inner -->
+        </div> <!-- /.container -->
+    </section>
+
+    <!-- Features -->
+    <section class="section section--features">
+        <div class="features__mask">
+            <div class="container">
+                <div class="features__inner" id="features">
+                    <div class="section__header">
+                        <h3 class="section__suptitle">Что особенного?</h3>
+                        <h2 class="section__title">Особенности</h2>
+                    </div>
+                    <div class="features__accordeon">
+                        <div class="accordeon__item active">
+                            <h4 class="accordeon__title">ВЫЖИТЬ ЛЮБОЙ ЦЕНОЙ</h4>
+                            <p class="accordeon__text">
+                                У вас есть 30 минут, чтобы найти реликвию, подать сигнал к извлечению и захватить
+                                одно из трех мест на спасательном вертолете.
+                            </p>
+                        </div>
+                        <div class="accordeon__item">
+                            <h4 class="accordeon__title">СОЗДАВАЙТЕ СОЮЗНИКОВ И ВРАГОВ</h4>
+                            <p class="accordeon__text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, ullam.
+                            </p>
+                        </div>
+                        <div class="accordeon__item">
+                            <h4 class="accordeon__title">ПРОИЗВЕДИТЕ ВПЕЧАТЛЕНИЕ НА АУДИТОРИЮ</h4>
+                            <p class="accordeon__text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste placeat veniam earum quis
+                                quae provident.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements -->
+    <section class="section section--requirements">
+        <div class="container">
+            <div class="section__header section__header--requirements" id="requirements">
+                <h3 class="section__suptitle">Может ли мой компьютер запустить эту игру?</h3>
+                <h2 class="section__title">системные требования</h2>
+            </div>
+            <div class="requirements">
+                <div class="requirements__inner">
+                    <div class="requirements__card">
+                        <h4 class="requirements__title">ОС:</h4>
+                        <span class="requirements__text">
+                            Windows 7 64-bit только <br>
+                            (На данный момент поддержка OSX отсутствует)</span>
+                    </div>
+                    <div class="requirements__card">
+                        <h4 class="requirements__title">ПРОЦЕССОР:</h4>
+                        <p class="requirements__text">
+                            Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ
+                        </p>
+                    </div>
+                    <div class="requirements__card">
+                        <h4 class="requirements__title">ПАМЯТЬ:</h4>
+                        <p class="requirements__text">
+                            8 GB RAM
+                        </p>
+                    </div>
+                    <div class="requirements__card">
+                        <h4 class="requirements__title">ХРАНИЛИЩЕ:</h4>
+                        <p class="requirements__text">
+                            8 GB available space
+                        </p>
+                    </div>
+                    <div class="requirements__card">
+                        <h4 class="requirements__title">ГРАФИКА:</h4>
+                        <p class="requirements__text">
+                            NVIDIA GeForce GTX 660 2GB или
+                            AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
+                        </p>
+                    </div>
+                </div>
+                <div class="requirements__border-1"></div>
+                <div class="requirements__border-2"></div>
+                <div class="requirements__border-3"></div>
+                <div class="requirements__border-4"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Quotes -->
+    <section class="section section--quotes">
+        <div class="quotes__mask">
+            <div class="container">
+                <div class="quotes__inner" id="quotes">
+
+                    <div class="quotes__col">
+                        <div class="section__header section__header--quotes">
+                            <h3 class="section__suptitle">Что думают люди?</h3>
+                            <h2 class="section__title">Цитаты из прессы</h2>
+                        </div>
+                        <p class="quotes__text">
+                            Наша цель - создать продукт и услугу, которыми вы будете довольны и которыми будете пользоваться каждый день.
+                            Вот почему мы постоянно работаем над нашими услугами, чтобы с каждым днем делать их лучше и действительно
+                            послушайте, что говорят наши пользователи.
+                        </p>
+                        <button class="btn">Читайте больше отзывов</button>
+                    </div>
+
+                    <div class="quotes__col">
+                        <div class="reviews">
+                            <div class="reviews__card">
+                                <div class="reviews__card__header">
+                                    <div class="reviews__author-icon">
+                                        <img src="images/quotes/i-1.png" alt="">
+                                    </div>
+                                    <div class="reviews__author-name">
+                                        <h4 class="reviews__title">Эван Лахти</h4>
+                                        <h5 class="reviews__subtitle">Компьютерный геймер</h5>
+                                    </div>
+                                    <a href="https://twitter.com/?lang=ru" target="_blank"><i
+                                            class="reviews__social-icon fab fa-twitter"></i></a>
+                                </div>
+                                <div class="reviews__card__content">
+                                    <p class="reviews__card__text">“Один из моих игровых моментов года”.</p>
+                                    <span class="reviews__date">18 октября 2018</span>
+                                </div>
+                            </div>
+
+                            <div class="reviews__card">
+                                <div class="reviews__card__header">
+                                    <div class="reviews__author-icon">
+                                        <img src="images/quotes/i-2.png" alt="">
+                                    </div>
+                                    <div class="reviews__author-name">
+                                        <h4 class="reviews__title">Джада Гриффин </h4>
+                                        <h5 class="reviews__subtitle">Ботаник-реактор</h5>
+                                    </div>
+                                    <a href="https://twitter.com/?lang=ru" target="_blank"><i
+                                            class="reviews__social-icon fab fa-twitter"></i></a>
+                                </div>
+                                <div class="reviews__card__content">
+                                    <p class="reviews__card__text">“Следующая крупная вещь в мире стриминга и
+                                        игр на выживание”.</p>
+                                    <span class="reviews__date">21 декабря 2018</span>
+                                </div>
+                            </div>
+
+                            <div class="reviews__card">
+                                <div class="reviews__card__header">
+                                    <div class="reviews__author-icon">
+                                        <img src="images/quotes/i-3.png" alt="">
+                                    </div>
+                                    <div class="reviews__author-name">
+                                        <h4 class="reviews__title">Аарон Уильямс </h4>
+                                        <h5 class="reviews__subtitle">Uproxx</h5>
+                                    </div>
+                                    <a href="https://twitter.com/?lang=ru" target="_blank"><i
+                                            class="reviews__social-icon fab fa-twitter"></i></a>
+                                </div>
+                                <div class="reviews__card__content">
+                                    <p class="reviews__card__text">“Снуп Догг, играющий в дико занимательную "SOS", 
+                                        просто смешон”.</p>
+                                    <span class="reviews__date">24 декабря 2018</span>
+                                </div>
+                            </div>
+                        </div> <!-- /.reviews -->
+                    </div> <!-- /.quotes__col -->
+
+                </div> <!-- /.quotes__inner -->
+            </div> <!-- /.container -->
+        </div> <!-- /.quotes__mask -->
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section section--newsletter">
+        <div class="container">
+            <div class="newsletter__inner">
+                <div class="newsletter__col">
+
+                    <div class="newsletter__image">
+                        <div class="newsletter__mask"></div>
+                        <img class="newsletter__img" src="images/media/bg_subscribe.png" alt="">
+                    </div>
+
+                </div>
+                <div class="newsletter__col">
+                    <div class="section__header section__header--newsletter">
+                        <h3 class="section__suptitle">Хотите оставаться на связи?</h3>
+                        <h2 class="section__title">ПОДПИСКА НА РАССЫЛКУ НОВОСТЕЙ</h2>
+                    </div>
+                    <p class="newsletter__text">Для того, чтобы начать получать наши новости, все, что вам нужно сделать, это ввести свой
+                        адрес электронной почты. Обо всем остальном мы позаботимся. Мы отправим вам электронные письма, содержащие
+                        информация об игре. Мы не занимаемся рассылкой спама.</p>
+                    <form action="#" class="subscribe__form1">
+                        <input type="email" class="subscribe__input" value="example@gmail.com" required>
+                        <label class="subscribe__label">Ваш адрес электронной почты</label>
+                        <button class="btn">Подпишитесь сейчас</button>
+                    </form>
+                </div>
+                <form action="#" class="subscribe__form2">
+                    <input type="email" class="subscribe__input" value="example@gmail.com" required>
+                    <label class="subscribe__label">Ваш адрес электронной почты</label>
+                    <button class="btn">Подписаться сейчас</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__navigation">
+                    <div class="footer__logo">
+                        <a href="#main"><img src="images/intro/logo.png" alt=""></a>
+                    </div>
+
+                    <nav class="nav nav--footer">
+                        <a href="#" class="nav__link nav__link--footer">Главная</a>
+                        <a href="#about" class="nav__link nav__link--footer">О нас</a>
+                        <a href="#features" class="nav__link nav__link--footer">Особенности игры</a>
+                        <a href="#requirements" class="nav__link nav__link--footer">Системные требования</a>
+                        <a href="#quotes" class="nav__link nav__link--footer">Отзывы</a>
+                    </nav>
+
+                    <nav class="nav nav--footer">
+                        <div class="footer__icons">
+                            <a class="footer__link" href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><i
+                                    class="footer__icon fab fa-facebook-f"></i></a>
+                            <a class="footer__link" href="https://twitter.com/" target="_blank"><i
+                                    class="footer__icon fab fa-twitter"></i></a>
+                            <a class="footer__link" href="https://www.youtube.com/" target="_blank"><i
+                                    class="footer__icon fab fa-youtube"></i></a>
+                            <a class="footer__link" href="https://www.twitch.tv/" target="_blank"><i
+                                    class="footer__icon fab fa-twitch"></i></a>
+                        </div>
+                    </nav>
+                </div>
+                <div class="footer__information">
+                    <div class="copyright">
+                        <span class="copyright__text"> © 2018 Outpost Games, Inc. все права защищены</span>
+                    </div>
+                    <div class="documents">
+                        <a class="documents__link" href="" target="_blank">Политика конфиденциальности</a>
+                        <a class="documents__link" href="" target="_blank">Условия предоставления услуг</a>
+                        <a class="documents__link" href="" target="_blank">Кодекс поведения</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
